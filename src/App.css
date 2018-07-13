@@ -1,0 +1,62 @@
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+
+.main {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #6395f2;
+  position: relative;
+}
+
+.title-text {
+  padding: 5px;
+  margin: 5px;
+}
+
+.form input {
+  width:100px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #1258DC;
+}
+
+::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.form button {
+  background-color: #1258DC;
+  border-radius: 5px;
+  border: 10px;
+  border-color: black;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.meteo {
+  width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  line-height: 15px;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.cond-meteo img {
+  width: 40px;
+}
+
+.meteo p {
+  text-align: center;
+}

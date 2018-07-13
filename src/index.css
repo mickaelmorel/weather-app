@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&effect=3d-float');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+	background-color: #DAE6FC;
+	font-family: 'Montserrat';
+}
+
+@keyframes bounceIn {
+	0%, 20%, 40%, 60%, 80%, 100% {transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+	0% {opacity: 0;	transform: scale3d(.3, .3, .3);}
+	20% {transform: scale3d(1.1, 1.1, 1.1);}
+	40% {transform: scale3d(.9, .9, .9);}
+	60% {opacity: 1; transform: scale3d(1.03, 1.03, 1.03);}
+	80% {transform: scale3d(.97, .97, .97);}
+	100% {opacity: 1; transform: scale3d(1, 1, 1);}
+	} 
+	
+@keyframes bounceInDown {
+	0%, 60%, 75%, 90%, 100% {transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+	0% {opacity: 0; transform: translate3d(0, -3000px, 0);}
+	60% {opacity: 1; transform: translate3d(0, 25px, 0);}
+	75% {transform: translate3d(0, -10px, 0);}
+	90% {transform: translate3d(0, 5px, 0);}
+	100% {transform: none;}
+}
+
+
+@keyframes bounceInUp {
+	0%, 60%, 75%, 90%, 100% {transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+	0% {opacity: 0;	transform: translate3d(0, 3000px, 0);}
+	60% {opacity: 1; transform: translate3d(0, -20px, 0);}
+	75% {transform: translate3d(0, 10px, 0);}
+	90% {transform: translate3d(0, -5px, 0);}
+	100% {transform: translate3d(0, 0, 0);}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	} 
+
+header {
+	animation-name: bounceInDown;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	height: 50px;
+	width: 200px;
+	line-height: 50px;
+	white-space: nowrap;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	background-color: #1258DC;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+	font-family: 'Acme';
+}
+
+footer {
+	display: block;
+	background-color: #6395f2;
+	border-radius: 20px;
+	overflow: auto;
+	white-space: nowrap;
+	animation-name: bounceInUp;
+  	animation-duration: 2s;
+  	animation-fill-mode: both;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+footer a {
+	margin-left: 10px;
+}
+
+footer p {
+	background-color: #1258DC;
+	border-radius: 20px;
+	width: 100%;
+	margin: auto;
+}
+
+.acceuil {
+	animation-name: bounceIn;
+  	animation-duration: 1.5s;
+  	animation-duration: 1.5s;
+  	animation-fill-mode: both;
+	width: 175px;
+	margin: auto;
+	background-color: #1258DC;
+	border-radius: 20px;
+	overflow: auto;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.acceuil a {
+	font-family: 'Montserrat';
+	display: inline-block;
+    color: black;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.acceuil a:hover {
+	cursor: pointer;
+	background: radial-gradient(closest-side at 50% 50%,#DAE6FC,#1258DC);
+}
+
+.desc {
+	width: 75%;
+	text-align: center;
+	background-color: #6395f2;
+	margin-left: 12.5%;
+	margin-top: 50px;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+#root {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+
